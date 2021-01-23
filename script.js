@@ -52,7 +52,7 @@ function createCactus() {
         } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60 ){
           // Game Over
           clearInterval(leftInterval);
-          document.body.innerHTML = '<h1 class="game-over">Game Over</h1>';
+          document.body.innerHTML = '<h1 class="game-over" >Game Over</h1>';
         } else {
             cactusPosition -= 10; // velocidade do jogo
             cactus.style.left = cactusPosition + 'px';

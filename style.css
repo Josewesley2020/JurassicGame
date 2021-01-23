@@ -1,8 +1,7 @@
 body {
-    background: rgb(0, 255, 255);
+    background: #00EE76;
+    background-image: url(/imgs/dinosaur-46288_640.png);
 }
-
-
 .dino{
     width: 60px;
     height: 60px;
@@ -10,7 +9,6 @@ body {
     position: absolute;
     bottom: 0;
 }
-
 .cactus{
     position: absolute;
     width: 60px;
@@ -19,12 +17,19 @@ body {
     background-image: url(/imgs/cactus.png);
 }
 
-.game-over {
+.texto, .game-over {
     text-align: center;
-    color: red;
-    margin-top: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+    background-color: #851944; 
+    color: #FFF; 
+    text-align: center;
+    
 }
+.game-over { 
+    margin: 10%;
+}
+
+
 
 @keyframes slideright {
     from {
@@ -34,13 +39,20 @@ body {
         background-position: 0;
     }
 }
-
 .background {
+    border-radius: 20px;
+    border: 3px double rgb(216, 40, 187);
     position: absolute;
-    bottom: 0;
+    top: 10%;
+    margin: 10%;
+    max-width: 100%;
     background-image: url(/imgs/background.png);
     background-repeat: repeat-x;
     animation: slideright 600s infinite linear;
-    width: 100%;
+    width: 80%;
     height: 200px;
+} 
+
+h1{
+    align-items: center;
 }
